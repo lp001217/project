@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Echo Roots</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+        <div class="container px-5">
+            <a class="navbar-brand fw-bold" href="index.html">Echo Roots</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="product.html">Product</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="frontEnd.html">Front-End</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3 active" href="backEnd.html">Back-End</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="profitAnalysis.html">Profit Analysis</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3"
+                            href="commercializationRoute.html">Commercialization Route</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div style="position: absolute; top: 120px; bottom: 100px; left: 200px; right: 200px;">
+        <p style="font-size: 50px;">Overall architecture description</p>
+        <p style="font-size: 35px;">1) Technology stack</p>
+        <ul>
+            <li class="para">
+                Server: Node.js + Express
+            </li>
+            <li class="para">
+                Database: MongoDB (modeled using Mongoose)
+            </li>
+            <li class="para">
+                Authentication: JWT (used for user login status verification, protection of "My Page" "Shopping Cart"
+                and other
+                interfaces)
+            </li>
+            <li class="para">
+                Payment: Integrate Alipay / WeChat / PayPal official SDK (handle payment callback and order status
+                synchronization)
+            </li>
+        </ul>
+        <p style="font-size: 35px;">2) Core module</p>
+        <ul>
+            <li class="para">
+                User module: manage user accounts, delivery addresses, etc. (corresponding to "My Page").
+            </li>
+            <li class="para">
+                Product module: supports product classification, search, and details display (corresponding to "Cultural
+                and Creative
+                Mall" "Product Details Page").
+            </li>
+            <li class="para">
+                Transaction module: shopping cart, order, payment process (corresponding to "Shopping Cart" "Payment
+                Page" "Order
+                Management Page").
+            </li>
+            <li class="para">
+                Competition module: competition registration, work submission, voting (corresponding to "Competition
+                Homepage" "Work
+                Submission Page" "Voting Page").
+            </li>
+        </ul>
+        <p style="font-size: 35px;">3) Overview of project structure</p>
+        <div class="container1">
+            <img src="assets/img/back1.png" alt="">
+        </div>
+        <p style="font-size: 50px;"> Core data model and code</p>
+        <p style="font-size: 35px;">1) User Model</p>
+        <div class="container1">
+            <img src="assets/img/back2.png" alt="">
+        </div>
+        <div class="container1">
+            <img src="assets/img/back3.png" alt="">
+        </div>
+
+        <p style="font-size: 35px;">2) Product Model</p>
+        <div class="container1">
+            <img src="assets/img/back4.png" alt="">
+        </div>
+        <div class="container1">
+            <img src="assets/img/back5.png" alt="">
+        </div>
+        <p style="font-size: 35px;">3) Order Model</p>
+        <div class="container1">
+            <img src="assets/img/back6.png" alt="">
+        </div>
+        <div class="container1">
+            <img src="assets/img/back7.png" alt="">
+        </div>
+        <p style="font-size: 35px;">4) Competition Model</p>
+        <div class="container1">
+            <img src="assets/img/back8.png" alt="">
+        </div>
+        <div class="container1">
+            <img src="assets/img/back9.png" alt="">
+        </div>
+        <p style="font-size: 50px;">Core interface design (RESTful API)</p>
+        <div class="container1">
+            <img src="assets/img/back10.png" alt="">
+        </div>
+
+        <p style="font-size: 35px;">1) Cultural and creative mall homepage related interfaces</p>
+        <p style="font-size: 35px;"">Code example: Product search interface</p>
+        <div class=" container1">
+            <img src="assets/img/back11.png" alt="">
+    </div>
+    <p style=" font-size: 35px;">2) Shopping cart interface (requires JWT authentication)</p>
+    <div class="container1">
+        <img src="assets/img/back12.png" alt="">
+    </div>
+    <p style="font-size: 35px;">Code Example: Add to Cart</p>
+    <div class="container1">
+        <img src="assets/img/back13.png" alt="">
+    </div>
+    <p style="font-size: 35px;">3) Payment and order interface</p>
+    <div class="container1">
+        <img src="assets/img/back14.png" alt="">
+    </div>
+    <p style="font-size: 35px;">Code example: Generate an order</p>
+    <div class="container1">
+        <img src="assets/img/back15.png" alt="">
+    </div>
+    <p style="font-size: 35px;">4) Competition module interface</p>
+    <div class="container1">
+        <img src="assets/img/back16.png" alt="">
+    </div>
+    <p style="font-size: 35px;">Code example: Anti-duplicate voting logic</p>
+    <div class="container1">
+        <img src="assets/img/back17.png" alt="">
+    </div>
+    <p style="font-size: 50px;">Core function implementation description</p>
+    <p style="font-size: 35px;">1) Product classification and search optimization</p>
+    <ul>
+        <li class="para">
+            Category screening: Direct filtering through the database category and sellerType fields, high
+            performance.
+        </li>
+        <li class="para">
+            Search function: Using MongoDB's text index (text index), support keyword fuzzy search of product titles
+            and
+            descriptions to improve search speed.
+        </li>
+    </ul>
+    <p style="font-size: 35px;">2) Shopping cart and user association</p>
+    <ul>
+        <li class="para">
+            Shopping cart data is stored in the cart array of the User model. JWT authentication is used to ensure
+            that users can
+            only operate their own shopping carts to avoid unauthorized access.
+        </li>
+    </ul>
+    <p style="font-size: 35px;">3) Payment process and order state machine</p>
+    <ul>
+        <li class="para">
+            The payment interface must strictly follow the security specifications of the third-party payment
+            platform (such as
+            signature verification, asynchronous callback processing) to ensure that the order status and payment
+            results are
+            ultimately consistent (using database transactions or status retry mechanisms).
+        </li>
+    </ul>
+    <p style="font-size: 35px;">4) Anti-brushing of competition voting</p>
+    <ul>
+        <li class="para">
+            By creating a unique composite index { userId: 1, workId: 1, competitionId: 1 } in the Vote collection,
+            ensure that each
+            user can only vote once for each work in each competition.
+        </li>
+    </ul>
+    <p style="font-size: 50px;">Database Table Structure Explanations</p>
+    <p style="font-size: 35px;">1) User Collection</p>
+    <div class="container1">
+        <img src="assets/img/back18.png" alt="">
+    </div>
+    <p style="font-size: 35px;">2) Product Collection</p>
+    <div class="container1">
+        <img src="assets/img/back19.png" alt="">
+    </div>
+    <p style="font-size: 35px;">3) Order Collection</p>
+    <div class="container1">
+        <img src="assets/img/back20.png" alt="">
+    </div>
+    <p style="font-size: 35px;">4) Competition Collection</p>
+    <div class="container1">
+        <img src="assets/img/back21.png" alt="">
+    </div>
+    <br>
+    <br>
+    <br>
+
+    </div>
+</body>
+
+</html>
